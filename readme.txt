@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: wizzyrea
-Donate link: http://www.nekls.org
+Donate link: http://www.koha-community.org
 Tags: koha, library, ILS, search
-Requires at least: 2.8
-Tested up to: 2.9.1
-Stable tag: 1.0
+Requires at least: 2.6
+Tested up to: 3.8.0
+Stable tag: 1.1
 
 A tiny widget that allows you to easily add a search box for your Koha catalog, as long as you know the URL of your Koha OPAC.
 == Description ==
@@ -25,7 +25,7 @@ The title text is arbitrary, and will be the header of the widget.
 
 = Are there any restrictions on the URL to my Koha Catalog? =
 
-Only that there are no trailing slashes, and you must have http:// at the beginning.
+Only that there are no trailing slashes, and you must have http:// or https:// at the beginning.
 
 == Screenshots ++
 
@@ -34,6 +34,8 @@ Only that there are no trailing slashes, and you must have http:// at the beginn
 = 1.0 =
 Initial Release
 
+= 1.1 =
+Tested with Wordpress 3.8, minor updates to documetation. No functional changes.
 == Upgrade Notice ==
 
 
