@@ -1,10 +1,9 @@
 === Plugin Name ===
 Contributors: wizzyrea
-Donate link: http://www.nekls.org
 Tags: koha, library, ILS, search
 Requires at least: 2.8
-Tested up to: 2.9.1
-Stable tag: 1.0
+Tested up to: 3.8
+Stable tag: 1.2
 
 A tiny widget that allows you to easily add a search box for your Koha catalog, as long as you know the URL of your Koha OPAC.
 == Description ==
@@ -33,6 +32,12 @@ Only that there are no trailing slashes, and you must have http:// at the beginn
 
 = 1.0 =
 Initial Release
+
+= 1.1 = 
+tested in 3.8 and minor documentation changes
+
+= 1.2 =
+Added localisation
 
 == Upgrade Notice ==
 
