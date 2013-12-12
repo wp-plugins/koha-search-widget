@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Koha Search Widget
- * Plugin URI: http://www.mykansaslibrary.org/widgets
+ * Plugin URI: http://www.koha-community.org
  * Description: Adds a search box for your Koha catalog
- * Version: 1.0
+ * Version: 1.1
  * Author: Liz Rea
- * Author URI: http://www.nekls.org
+ * Author URI: http://www.koha-community.org
  */
 
 /**
