@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Koha Search Widget
- * Plugin URI: http://www.koha-community.org
+ * Plugin URI: http://www.koha-community.org 
  * Description: Adds a search box for your Koha catalog
- * Version: 1.1
+ * Version: 1.2
  * Author: Liz Rea
  * Author URI: http://www.koha-community.org
  */
@@ -35,6 +35,11 @@ add_action( 'widgets_init', 'koha_load_widgets' );
 function koha_load_widgets() {
 	register_widget( 'Koha_Widget' );
 }
+
+/**
+ * Load Internationalization
+ */
+load_plugin_textdomain('koha', false, dirname(plugin_basename(__FILE__)).'/lang');
 
 
 class Koha_Widget extends WP_Widget {
@@ -75,15 +80,15 @@ class Koha_Widget extends WP_Widget {
 			echo '<form name="searchform" method="get" action="' . $url . '/cgi-bin/koha/opac-search.pl" id="searchform">
         <input type="text" id = "transl1" name="q"/><p>
 	<select name="idx" id="masthead_search">	
-        <option value="">Keyword</option>				
-        <option value="ti">Title</option>				
-        <option value="au">Author</option>				
-        <option value="su">Subject</option>		
-	<option value="nb">ISBN</option>				
-        <option value="se">Series</option>				
-        <option value="callnum">Call Number</option>
+        <option value="">' . __('Keyword', 'koha') . '</option>				
+        <option value="ti">' . __('Title', 'koha') . '</option>				
+        <option value="au">' . __('Author', 'koha') . '</option>				
+        <option value="su">' . __('Subject', 'koha') . '</option>		
+	<option value="nb">' . __('ISBN', 'koha') . '</option>				
+        <option value="se">' . __('Series', 'koha') . '</option>				
+        <option value="callnum">' . __('Call Number', 'koha') . '</option>
 		</select>
-    <input type="submit" value="Search" id="searchsubmit"/>
+    <input type="submit" value="' . __('Search', 'koha') . '" id="searchsubmit"/>
     </form>';
 
 
